@@ -1,3 +1,5 @@
+//user information and responses will be stored here.
+
 var friendsArray = [
 	{
 	    name:"Wonder Woman",

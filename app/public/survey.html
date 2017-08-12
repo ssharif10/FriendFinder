@@ -24,134 +24,199 @@
     </style>
  </head>
  <body>
- <div class="container wrapper">
- 	<h2>Survey Questions</h2>
- 	<hr>
- 	<h3>About You</h3>
-		<h4 style="font-size: 17px;">Name (Required)</h4>
-        <input type="text" class="form-control" id="name" style="height: 30px;">  
-        <h4 style="font-size: 17px;">Link to Photo Image (Required)</h4>
-        <input type="text" class="form-control" id="photo" style="height: 30px;" style="margin-bottom: 20px;">
-	<hr>
-	<h3>Question 1</h3>
-		<h4 style="font-size: 17px;">You feel as though communication is very important in a relationship.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+	 <div class="container wrapper">
+	 	<h2>Survey Questions</h2>
+	 	<hr>
+	 	<h3>About You</h3>
+			<h4 style="font-size: 17px;">Name (Required)</h4>
+	        <input type="text" class="form-control" id="name" style="height: 30px;">  
+	        <h4 style="font-size: 17px;">Link to Photo Image (Required)</h4>
+	        <input type="text" class="form-control" id="photo" style="height: 30px;" style="margin-bottom: 20px;">
+		<hr>
 
-	<h3>Question 2</h3>
-		<h4 style="font-size: 17px;">You consider yourself as having an introverted personality.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+	<!-- Survey questions begin here. -->
+		<h3>Question 1</h3>
+			<h4 style="font-size: 17px;">You feel as though communication is very important in a relationship.</h4>
+				<select class="selectpicker" id="question1" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 3</h3>
-		<h4 style="font-size: 17px;">You consider yourself as having an extroverted personality.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 2</h3>
+			<h4 style="font-size: 17px;">You consider yourself as having an introverted personality.</h4>
+				<select class="selectpicker" id="question2" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 4</h3>
-		<h4 style="font-size: 17px;">You prefer a night in vs. a night out for a date.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 3</h3>
+			<h4 style="font-size: 17px;">You consider yourself as having an extroverted personality.</h4>
+				<select class="selectpicker" id="question3" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 5</h3>
-		<h4 style="font-size: 17px;">Your family is a large part of your life.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 4</h3>
+			<h4 style="font-size: 17px;">You prefer a night in vs. a night out for a date.</h4>
+				<select class="selectpicker" id="question4" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 6</h3>
-		<h4 style="font-size: 17px;">Having similar political beliefs is something that you feel is important in a mate.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 5</h3>
+			<h4 style="font-size: 17px;">Your family is a large part of your life.</h4>
+				<select class="selectpicker" id="question5" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 7</h3>
-		<h4 style="font-size: 17px;">You are open to someone of a different religious faith.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 6</h3>
+			<h4 style="font-size: 17px;">Having similar political beliefs is something that you feel is important in a mate.</h4>
+				<select class="selectpicker" id="question6" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 8</h3>
-		<h4 style="font-size: 17px;">You prefer to be with someone who enjoys outdoor activity.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 7</h3>
+			<h4 style="font-size: 17px;">You are open to someone of a different religious faith.</h4>
+				<select class="selectpicker" id="question7" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 9</h3>
-		<h4 style="font-size: 17px;">You believe only certain Zodiac signs are compatible with yours.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
+		<h3>Question 8</h3>
+			<h4 style="font-size: 17px;">You prefer to be with someone who enjoys outdoor activity.</h4>
+				<select class="selectpicker" id="question8" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
-	<h3>Question 10</h3>
-		<h4 style="font-size: 17px;">I don't believe in Zodiac signs.</h4>
-			<select class="selectpicker" style="height: 30px;" style="width: 50px;">
-			  <option>Select an Option</option>
-			  <option>1 (Strongly Disagree)</option>
-			  <option>2</option>
-			  <option>3</option>
-			  <option>4</option>
-			  <option>5 (Strongly Agree)</option>
-			</select>
-			<hr>
+		<h3>Question 9</h3>
+			<h4 style="font-size: 17px;">You believe only certain Zodiac signs are compatible with yours.</h4>
+				<select class="selectpicker" id="question9" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
 
- 
-	<a href="/Survey"><button type="button" class="btn btn-primary btn-lg btn-block" style="color: #FFF;"><span class="glyphicon glyphicon glyphicon-ok-sign"></span>Submit</button></a>
- 	<hr>
- 	<footer>
- 	<div class="row links" style="margin-left: 10px;">
- 	<a href="">API Friends List</a> | <a href="https://github.com/ssharif10/FriendFinder" target="_blank">Github Repo</a>
- 	</div>
- 	</footer>
-</div>
+		<h3>Question 10</h3>
+			<h4 style="font-size: 17px;">I don't believe in Zodiac signs.</h4>
+				<select class="selectpicker" id="question10" style="height: 30px;" style="width: 50px;">
+				  <option>Select an Option</option>
+				  <option>1 (Strongly Disagree)</option>
+				  <option>2</option>
+				  <option>3</option>
+				  <option>4</option>
+				  <option>5 (Strongly Agree)</option>
+				</select>
+				<hr>
+
+	 
+		<a href="/Survey"><button type="button" class="btn btn-primary btn-lg btn-block" id="submitButton" style="color: #FFF;"><span class="glyphicon glyphicon glyphicon-ok-sign"></span>Submit</button></a>
+	 	<hr>
+	 	<footer>
+	 	<div class="row links" style="margin-left: 10px;">
+	 	<a href="/api/friends">API Friends List</a> | <a href="https://github.com/ssharif10/FriendFinder" target="_blank">Github Repo</a>
+	 	</div>
+	 	</footer>
+	</div>
+
+<!-- modal begins here to alert user of their closest match-->
+	<!-- Modal -->
+		<div class="modal fade" id="modalalert" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modalTitle">Meet Your Closest Match!</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		          <h2 class="modal-title" id="myModalLabel"></h2>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      <h2 id="closestMatchName"></h2>
+				<img id="closestMatchImg" src="" alt="" style="max-width: 500px; max-height: 400px;">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+<script type="text/javascript">
+
+$("#submitButton").on("click", function() {
+    event.preventDefault();
+
+    var newFriendData = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+            $("#question1").val().trim(),
+            $("#question2").val().trim(),
+            $("#question3").val().trim(),
+            $("#question4").val().trim(),
+            $("#question5").val().trim(),
+            $("#question6").val().trim(),
+            $("#question7").val().trim(),
+            $("#question8").val().trim(),
+            $("#question9").val().trim(),
+            $("#question10").val().trim()
+        ]
+    };
+    
+
+    // Grab the URL of the website
+	var currentURL = window.location.origin;
+
+	//sending user input to friends array
+    $.post(currentURL + "/api/friends", newFriendData,
+        function(data) {
+            $("#closestMatchName").text(data.closestMatchName);
+            $("#closestMatchImg").attr("src", data.closestMatchImg);
+            $("#modalalert").modal("toggle");
+            ß
+        });
+});
+</script>
+
+
+
  </body>
  </html>

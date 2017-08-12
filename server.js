@@ -1,3 +1,4 @@
+//requiring needed NPM packages
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
@@ -7,12 +8,15 @@ var PORT = process.env.PORT || 8080;
 
 
 // parse application/x-www-form-urlencoded 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
  
 // parse application/json 
 app.use(bodyParser.json())
 
+//requiring the apiRoutes file
 require('./app/routing/apiRoutes.js')(app); 
+
+//requiring the htmlRoutes file
 require('./app/routing/htmlRoutes.js')(app);
 
 
